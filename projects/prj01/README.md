@@ -11,9 +11,7 @@
 2. What is the current limit of the driver, given that sense resistors R4/R5 are 0 Ω?
 
 ## Schematic
-
-                                                                                 
-                                                                                 
+```
              +-----+                                                             
      +-------| USB |----------+                                                  
      |       +-----+          |                                                  
@@ -48,7 +46,8 @@
   |  +------------------------+              | | [ ]           |                 
   |                             black        | | [ ]   DRIVER  |                 
   +------------------------------------------+ +---------------+                 
-                                                                                 
+
+```                                                                                 
 
 ## Setup
 ```
