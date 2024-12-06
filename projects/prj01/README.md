@@ -49,42 +49,5 @@
 
 ```                                                                                 
 
-## Setup
-```
-//      signal  pin     //  STATE
-//      VDD     3.3V    //  HIGH
-#define MS1     2       //  LOW
-#define MS2     3       //  LOW
-#define MS3     4       //  LOW
-#define SLEEP   5       //  HIGH
-#define STEP    6       //  LOW
-#define DIR     7       //  LOW for CW
-#define ENABLE  8       //  LOW
-#define RESET   9       //  HIGH
-//      GND     GND     //  LOW
-
-void setup()
-{
-	pinMode(MS1, OUTPUT);     digitalWrite(MS1, LOW);
-	pinMode(MS2, OUTPUT);     digitalWrite(MS2, LOW);
-	pinMode(MS3, OUTPUT);     digitalWrite(MS3, LOW);
-	pinMode(SLEEP, OUTPUT);   digitalWrite(SLEEP, HIGH);
-	pinMode(STEP, OUTPUT);    digitalWrite(STEP, LOW);
-	pinMode(DIR, OUTPUT);     digitalWrite(DIR, LOW);
-	pinMode(ENABLE, OUTPUT);  digitalWrite(ENABLE, LOW);
-	pinMode(RESET, OUTPUT);   digitalWrite(RESET, HIGH);
-	
-	//pinMode(13, OUTPUT);      digitalWrite(13, LOW);
-}
-```
-
-## loop to make 1 step each second
-```
-void loop()
-{
-    digitalWrite(STEP, HIGH);
-    delayMicroseconds(2);   // 1 us by dataasheet
-    digitalWrite(STEP, LOW);
-    delay(995); // TBC
-}
-```
+## Code
+See [prj01.ino](./prj.ino) for the code.
