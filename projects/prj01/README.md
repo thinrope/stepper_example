@@ -50,4 +50,4 @@
 ```                                                                                 
 
 ## Code
-See [prj01.ino](prj.ino) for the code.
+See prj01.inofor the code.
