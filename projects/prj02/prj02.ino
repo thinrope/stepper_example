@@ -84,7 +84,7 @@ void ignition()
   delay(2000);
 
   Serial.printf("\tExperiment %02d, step4: down into the water\n", experiment_no);
-	for (int i=0; i<50; i++)
+	for (int i=0; i<65; i++)
   {
     digitalWrite(STEP, HIGH);
     delayMicroseconds(ppulse);
@@ -94,7 +94,7 @@ void ignition()
   delay(5000);
 
   Serial.printf("\tExperiment %02d, step5: out of the water\n", experiment_no);
-	for (int i=0; i<50; i++)
+	for (int i=0; i<85; i++)
   {
     digitalWrite(STEP, HIGH);
     delayMicroseconds(ppulse);
